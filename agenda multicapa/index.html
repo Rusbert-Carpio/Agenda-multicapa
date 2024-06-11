@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="agenda.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Agenda Multicapas</title>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Agenda Multicapas</h1>
+    </div>
+    <div class="contenedor-fondo">
+        <div class="text-overlay">
+            <div class="formulario">
+                <h3>Ingrese un nuevo contacto</h3>
+                <form id="contactForm">
+                    <h4>Nombre</h4><input type="text" id="nombreInput" name="Nombre">
+                    <h4>Apellido</h4><input type="text" id="apellidoInput" name="Apellido">
+                    <h4>Número</h4><input type="text" id="numeroInput" name="Numero">
+                    <button type="submit" class="boton-agregar"><i class="fas fa-plus-circle"></i> Agregar</button>
+                </form>
+                <button class="boton-limpiar" onclick="limpiarCampos()"><i class="fas fa-trash-alt"></i> Limpiar</button>
+            </div>
+        </div>
+    </div>
+    <div class="record_container">
+        <!-- Aquí se mostrarán los datos del API -->
+    </div>
+    <div class="record_container"></div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
